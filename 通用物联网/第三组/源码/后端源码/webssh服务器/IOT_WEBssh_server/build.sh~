@@ -1,0 +1,2 @@
+g++ -g -Wall -I../ -DWITH_POSIX -c newserver.cpp -o newserver.o
+g++ newserver.o -o newserver -L../ -lcoap -I../ -lcoap
