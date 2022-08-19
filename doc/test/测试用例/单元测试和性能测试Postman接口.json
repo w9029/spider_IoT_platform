@@ -1,0 +1,1692 @@
+{
+	"info": {
+		"_postman_id": "51661692-0250-4a38-911b-d9e9ebb6d854",
+		"name": "物联网",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "industry",
+			"item": [
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "industryId",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "industryRemark",
+									"value": "sdawfee",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "industryName",
+									"value": "6-29",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "unitId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "unitName",
+									"value": "sss",
+									"type": "text"
+								},
+								{
+									"key": "unitRemark",
+									"value": "sdfse",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8050/industry/update/unit",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"industry",
+								"update",
+								"unit"
+							],
+							"query": [
+								{
+									"key": "industryId",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "industryName",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "industryRemark",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "industryTime",
+									"value": "5.55",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8050/industry/add/industry",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"industry",
+								"add",
+								"industry"
+							],
+							"query": [
+								{
+									"key": "industryName",
+									"value": "zzz",
+									"disabled": true
+								},
+								{
+									"key": "industryRemark",
+									"value": "13123",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_unit/device",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "industryId",
+									"value": "22",
+									"type": "text"
+								},
+								{
+									"key": "UnitName",
+									"value": "zhy_unit_1",
+									"type": "text"
+								},
+								{
+									"key": "UnitRemark",
+									"value": "that is a test too",
+									"type": "text"
+								},
+								{
+									"key": "unitId",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "deviceId",
+									"value": "test",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "deviceName",
+									"value": "zhy_device",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "deviceRemark",
+									"value": "that is a test",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "sendRate",
+									"value": "100",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8050/industry/add/unit",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"industry",
+								"add",
+								"unit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/update/unit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "industryId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "unitId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "newName",
+									"value": "zzzz",
+									"type": "text"
+								},
+								{
+									"key": "unitRemark",
+									"value": "tewt",
+									"type": "text"
+								},
+								{
+									"key": "industryName",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "industryRemark",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8050/industry/update/unit?",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"industry",
+								"update",
+								"unit"
+							],
+							"query": [
+								{
+									"key": "industryId",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "unitId",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "newName",
+									"value": "newname",
+									"disabled": true
+								},
+								{
+									"key": "unitRemark",
+									"value": "hhhhhh",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findall",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "22",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8050/industry/findall?",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"industry",
+								"findall"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "22",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find/unit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8050/industry/find/unit?id=22",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"industry",
+								"find",
+								"unit"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "22"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "device",
+			"item": [
+				{
+					"name": "add/userdevice",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "industryId",
+									"value": "22",
+									"type": "text"
+								},
+								{
+									"key": "deviceId",
+									"value": "z7",
+									"type": "text"
+								},
+								{
+									"key": "deviceRemark",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "AcqUnitId",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "deviceName",
+									"value": "zhy_test",
+									"type": "text"
+								},
+								{
+									"key": "sendRate",
+									"value": "6",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8050/device/add/userdevice",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"device",
+								"add",
+								"userdevice"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/add/device",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "localhost:8050/device/add/device?deviceId=zhy&longitude=55&latitude=62",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"device",
+								"add",
+								"device"
+							],
+							"query": [
+								{
+									"key": "deviceId",
+									"value": "zhy"
+								},
+								{
+									"key": "longitude",
+									"value": "55"
+								},
+								{
+									"key": "latitude",
+									"value": "62"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/device/find",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "deviceId",
+									"value": "zhy",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8050/device/find",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"device",
+								"find"
+							],
+							"query": [
+								{
+									"key": "devoceId",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findall",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "industryId",
+									"value": "22",
+									"type": "text"
+								},
+								{
+									"key": "unitId",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8050/device/findall",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"device",
+								"findall"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "sensor",
+			"item": [
+				{
+					"name": "add/sensor",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"industryId\":\"22\",\n\t\"unitId\":\"4\",\n\t\"deviceId\":\"z2\",\n\t\"sensorAddr\":\"01\",\n\t\"sensorName\":\"zz3\",\n\t\"code\":\"ccc\",\n\t[\n\t\t{\n\t\t\"typeName\":\"eee\",\n\t\t\"byteStart\":\"fff\",\n\t\t\"byteCount\":\"ggg\",\n\t\t\"dataDefine\":\"float\",\n\t\t\"dicimal\":\"2\",\n\n\t\t}\n\t\t]\n\t\n\t\n}"
+						},
+						"url": {
+							"raw": "localhost:8050/sensor/add/sensor",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"sensor",
+								"add",
+								"sensor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update/value and threshold ",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "deviceId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "sensorAddr",
+									"value": "bbb",
+									"type": "text"
+								},
+								{
+									"key": "max",
+									"value": "60",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "min",
+									"value": "20",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "test",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8050/sensor/update/value",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"sensor",
+								"update",
+								"value"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete/sensor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "deviceId",
+									"value": "6af6188e14aa",
+									"type": "text"
+								},
+								{
+									"key": "sensorAddr",
+									"value": "25",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8050/sensor/delete/sensor",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"sensor",
+								"delete",
+								"sensor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/add/default",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"deviceId\" : \"6af6188e14aa\",\n\t\"industryId\":\"22\",\n\t\"sensorName\" :\"zzzzz\",\n\t\"addr\" : \"1\"\n}\n"
+						},
+						"url": {
+							"raw": "localhost:8050/sensor/add/default",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"sensor",
+								"add",
+								"default"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sensor/detail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "deviceId",
+									"value": "6af6188e14aa",
+									"type": "text"
+								},
+								{
+									"key": "sensorAddr",
+									"value": "01",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8050/sensor/detail",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"sensor",
+								"detail"
+							],
+							"query": [
+								{
+									"key": "sdds",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/returnbefore",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "deviceId",
+									"value": "6af6188e14aa",
+									"type": "text"
+								},
+								{
+									"key": "sensorAddr",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8050/sensor/returnbefore",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"sensor",
+								"returnbefore"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"zhy@qq.com\",\n\t\"password\":\"111\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8050/user/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"user",
+								"login"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "02",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/regist",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"zhy_4\",\n\t\"identity\":\"Z5Pn9A\",\n\t\"email\":\"877530780@qq.com\",\n\t\"password\":\"123\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8050/user/regist",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"user",
+								"regist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "identity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"email\":\"877530780@qq.com\",\"name\":\"zhy\"}"
+						},
+						"url": {
+							"raw": "localhost:8050/user/identity",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"user",
+								"identity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/find/histyory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "start",
+									"value": "1561966727",
+									"type": "text"
+								},
+								{
+									"key": "end",
+									"value": "1561981127",
+									"type": "text"
+								},
+								{
+									"key": "deviceId",
+									"value": "6af6188e14aa",
+									"type": "text"
+								},
+								{
+									"key": "types",
+									"value": "{temperature:\"01\",humidity:\"01\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8050/user/findhistory",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"user",
+								"findhistory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/changemail",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\" : \"zhy@qq.com\",\n\t\"email\" : \"877530780@qq.com\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8050/user/changemail",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"user",
+								"changemail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changephone",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\" : \"zhy@qq.com\",\n\t\"phone\" : \"18868102289\"\n} "
+						},
+						"url": {
+							"raw": "localhost:8050/user/changephone",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"user",
+								"changephone"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/changepassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"zhy@qq.com\",\n\t\"password\":\"111\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8050/user/changepasssword",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"user",
+								"changepasssword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgetpassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"indentity\":\"Z5Pn9A\",\n\t\"name\":\"zhy@qq.com\",\n\t\"password\":\"11111\"\n"
+						},
+						"url": {
+							"raw": "localhost:8050/user/forgetpassword",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"user",
+								"forgetpassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/find",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"zhy@qq.com\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8050/user/find",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"user",
+								"find"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "userindustry",
+			"item": [
+				{
+					"name": "find",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "zhy@qq.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8050/userindustry/find",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"userindustry",
+								"find"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "zhy",
+									"disabled": true
+								},
+								{
+									"key": "industryId",
+									"value": "4",
+									"disabled": true
+								},
+								{
+									"key": "permission",
+									"value": "0",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "relay",
+			"item": [
+				{
+					"name": "/link",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "deivceId",
+									"value": "6af6188e14aa",
+									"type": "text"
+								},
+								{
+									"key": "addr",
+									"value": "55",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8050/relay/link",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"relay",
+								"link"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8050/relay/add/relay",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"industryId\":\"22\",\n\t\"deviceId\": \"6af6188e14aa\",\n\t\"relayName\" : \"zhyrelay\",\n\t\"relayAddr\" : \"254\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8050/relay/add/relay",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"relay",
+								"add",
+								"relay"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete/relay",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "industryId",
+									"value": "22",
+									"type": "text"
+								},
+								{
+									"key": "deviceId",
+									"value": "6af6188e14aa",
+									"type": "text"
+								},
+								{
+									"key": "relayAddr",
+									"value": "254",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8050/relay/delete/relay",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"relay",
+								"delete",
+								"relay"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update/relay",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "industryId",
+									"value": "22",
+									"type": "text"
+								},
+								{
+									"key": "deviceId",
+									"value": "6af6188e14aa",
+									"type": "text"
+								},
+								{
+									"key": "relayAddr",
+									"value": "25",
+									"type": "text"
+								},
+								{
+									"key": "newName",
+									"value": "test_name",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8050/relay/update/relay",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"relay",
+								"update",
+								"relay"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "message",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "deviceId",
+									"value": "6af6188e14aa",
+									"type": "text"
+								},
+								{
+									"key": "relayAddr",
+									"value": "254",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8050/relay/message",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"relay",
+								"message"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "returnbefore",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "deviceId",
+									"value": "6af6188e14aa",
+									"type": "text"
+								},
+								{
+									"key": "relayAddr",
+									"value": "254",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8050/relay/returnbefore",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"relay",
+								"returnbefore"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add/machine",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "industryId",
+									"value": "22",
+									"type": "text"
+								},
+								{
+									"key": "deviceId",
+									"value": "6af6188e14aa",
+									"type": "text"
+								},
+								{
+									"key": "relayAddr",
+									"value": "25",
+									"type": "text"
+								},
+								{
+									"key": "machineName",
+									"value": "test_2",
+									"type": "text"
+								},
+								{
+									"key": "machinePostion",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8050/relay/add/machine",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"relay",
+								"add",
+								"machine"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update/machineState",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8050/relay/update/machineState?industryId=22&deviceId=6af6188e14aa&relayAddr=254&position=1&machineName=test_1&state=true",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"relay",
+								"update",
+								"machineState"
+							],
+							"query": [
+								{
+									"key": "industryId",
+									"value": "22"
+								},
+								{
+									"key": "deviceId",
+									"value": "6af6188e14aa"
+								},
+								{
+									"key": "relayAddr",
+									"value": "254"
+								},
+								{
+									"key": "position",
+									"value": "1"
+								},
+								{
+									"key": "machineName",
+									"value": "test_1"
+								},
+								{
+									"key": "state",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete/machine",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8050/relay/delete/machine?industryId=22&deviceId=6af6188e14aa&relayAddr=254&machinePosition=2",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"relay",
+								"delete",
+								"machine"
+							],
+							"query": [
+								{
+									"key": "industryId",
+									"value": "22"
+								},
+								{
+									"key": "deviceId",
+									"value": "6af6188e14aa"
+								},
+								{
+									"key": "relayAddr",
+									"value": "254"
+								},
+								{
+									"key": "machinePosition",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "relay/machine",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n\t{\n\t\t\"industryId\":\"22\",\n\t\t\"deviceId\":\"6af6188e14aa\",\n\t\t\"relayAddr\":\"254\",\n\t\t\"machineName\":\"null\",\n\t\t\"machinePosition\":\"0\"\n\t},\n\t{\n\t\t\"industryId\":\"22\",\n\t\t\"deviceId\":\"6af6188e14aa\",\n\t\t\"relayAddr\":\"254\",\n\t\t\"machineName\":\"null\",\n\t\t\"machinePosition\":\"1\"\n\t},\n\t{\n\t\t\"industryId\":\"22\",\n\t\t\"deviceId\":\"6af6188e14aa\",\n\t\t\"relayAddr\":\"254\",\n\t\t\"machineName\":\"la\",\n\t\t\"machinePosition\":\"2\"\n\t},\n\t{\n\t\t\"industryId\":\"22\",\n\t\t\"deviceId\":\"6af6188e14aa\",\n\t\t\"relayAddr\":\"254\",\n\t\t\"machineName\":\"null\",\n\t\t\"machinePosition\":\"3\"\n\t},\n\t{\n\t\t\"industryId\":\"22\",\n\t\t\"deviceId\":\"6af6188e14aa\",\n\t\t\"relayAddr\":\"254\",\n\t\t\"machineName\":\"aaaa\",\n\t\t\"machinePosition\":\"4\"\n\t},\n\t{\n\t\t\"industryId\":\"22\",\n\t\t\"deviceId\":\"6af6188e14aa\",\n\t\t\"relayAddr\":\"254\",\n\t\t\"machineName\":\"null\",\n\t\t\"machinePosition\":\"5\"\n\t},\n\t{\n\t\t\"industryId\":\"22\",\n\t\t\"deviceId\":\"6af6188e14aa\",\n\t\t\"relayAddr\":\"254\",\n\t\t\"machineName\":\"null\",\n\t\t\"machinePosition\":\"6\"\n\t},\n\t{\n\t\t\"industryId\":\"22\",\n\t\t\"deviceId\":\"6af6188e14aa\",\n\t\t\"relayAddr\":\"254\",\n\t\t\"machineName\":\"ha\",\n\t\t\"machinePosition\":\"7\"\n\t}\n\t]"
+						},
+						"url": {
+							"raw": "localhost:8050/relay/machine",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"relay",
+								"machine"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "rule",
+			"item": [
+				{
+					"name": "localhost:8050/device/operate/rule",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "industryId",
+									"value": "22",
+									"type": "text"
+								},
+								{
+									"key": "deviceId",
+									"value": "6af6188e14aa",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "operation",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8050/device/operate/rule",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"device",
+								"operate",
+								"rule"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add/rule",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\t\"type\":\"profession\",\n\t\"content\":\"-1\",\n\t\"toaddr\":\"254\",\n\t\"action\":\"FF\",\n\t\"code\":\"\",\n\t\"industryId\":\"22\",\n\t\"deviceId\":\"6af6188e14aa\",\n\t\"addr\":\"01\",\n\t\"typeName\":\"temperature\",\n\t\"logic\":\"lessThan\",\n\t\"value\":\"15\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8050/device/add/rule",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"device",
+								"add",
+								"rule"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete/rule",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "bb6c89e055f6425cbb4aa19b8bd409ff",
+									"type": "text"
+								},
+								{
+									"key": "deviceId",
+									"value": "6af6188e14aa",
+									"type": "text"
+								},
+								{
+									"key": "industryId",
+									"value": "22",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8050/device/delete/rule",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"device",
+								"delete",
+								"rule"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/device/find/rule",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8050/device/find/rule?deviceId=6af6188e14aa",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"device",
+								"find",
+								"rule"
+							],
+							"query": [
+								{
+									"key": "deviceId",
+									"value": "6af6188e14aa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "device/add/rule    专业",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\t\"industryId\":\"22\",\n\t\"deviceId\":\"6af6188e14aa\",\n\t\"type\":\"profession\",   \n\t\"typeName\":\"temperature\",\n\t\"logic\":\"moreThan\",\n\t\"value\":\"45\",\n\t\"code\":\"FE 05 00 01 FF 00 C9 F5\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8050/device/add/rule",
+							"host": [
+								"localhost"
+							],
+							"port": "8050",
+							"path": [
+								"device",
+								"add",
+								"rule"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
