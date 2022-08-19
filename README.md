@@ -20,11 +20,11 @@ In addition, we have also implemented the function of remote debugging terminal,
 **Device:** C++, SQLite3, RE-485, BASE64
 
 ### Data Relationship ###
-![ ](./Assets/业务数据关系.png)
+![ ](./Assets/data%20relationship.png)
 ### Server Architecture ###
-![ ](./Assets/架构.png)
+![ ](./Assets/server%20architecture.png)
 ### Terminal Device Architecture ###
-![ ](./Assets/终端架构.png)
+![ ](./Assets/terminal%20device%20architecture.png)
 
 
 ### Website Screenshots ###
