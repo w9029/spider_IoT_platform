@@ -21,7 +21,7 @@ In addition, we have also implemented the function of remote debugging terminal,
 ### Technology Stack ###
 **Backend:** JAVA, SpringBoot, SpringCloud, MQTT, Redis, MongoDB, InfluxDB, MySQL, Mybatis 
 
-**Frontend:** HTML, CSS, JavaScript, Vue, Websocket, Element-UI, Baidu-Map, ECharts
+**Frontend:** HTML, CSS, JavaScript, Vue, Websocket, Element-UI, Baidu-Map, ECharts 
 
 **Device:** C++, SQLite3, RE-485, BASE64
 
