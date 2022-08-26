@@ -25,7 +25,7 @@ In addition, we have also implemented the function of remote debugging terminal,
 
 **Device:** C++, SQLite3, RE-485, BASE64
 
-### Data Relationship (Example)###
+### Data Relationship (Example) ###
 ![ ](./Assets/data%20relationship.png)
 ### Server Architecture ###
 ![ ](./Assets/server%20architecture.png)
