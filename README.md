@@ -13,10 +13,10 @@ Spider IoT is an IoT management platform. Users can make terminal devices connec
 Users can set some thresholds for a sensor of a terminal device. When the environmental data reaches the threshold, the server will send an alert SMS to the mobile phone number set by the user, or execute the control behavior set in advance by the user (such as turning on the fan when the temperature reaches a high threshold).
 
 
-A very convenient function is that as long as the sensor uses the RS485 communication protocol, after the user physically connects the sensor to the device, he can configure the device on the website according to the sending format of the sensor, and then the server will issue commands to let the device start getting data normally.
+A very convenient function is that as long as the sensor uses the RS485 communication protocol, after the user physically connects the sensor to a device with our program, what needs to be done on the device is all over, he can configure the device on the website according to the sending format of the sensor, and then the server will issue commands to let the device start getting data normally.
 
 
-In addition, we have also implemented the function of remote debugging terminal, and users can access the terminal of the terminal device through WebSSH on the page.
+In addition, we have also implemented the function of remote debugging terminal, users can access the terminal of the terminal device through WebSSH on the page.
 
 ### Technology Stack ###
 **Backend:** JAVA, SpringBoot, SpringCloud, MQTT, Redis, MongoDB, InfluxDB, MySQL, Mybatis 
@@ -25,7 +25,7 @@ In addition, we have also implemented the function of remote debugging terminal,
 
 **Device:** C++, SQLite3, RE-485, BASE64
 
-### Data Relationship ###
+### Data Relationship (Example)###
 ![ ](./Assets/data%20relationship.png)
 ### Server Architecture ###
 ![ ](./Assets/server%20architecture.png)
